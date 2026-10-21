@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated article."
+title: "SGCL: Sensitivity-Guided Cross-Layer Soft-Error Resilience Framework -- experimental pipeline"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/<user>/sgcl-soft-error-resilience"
+abstract: "PyTorch pipeline reproducing all experiments of 'A Unified Sensitivity Guided Cross Layer Framework for Soft Error Resilience in Machine Learning Systems': IEEE-754 bit-flip fault injection, layer-wise sensitivity, architectural hardening, curriculum fault-aware training, sensitivity-aware pruning and mixed precision, matched comparators and paired statistical tests."
