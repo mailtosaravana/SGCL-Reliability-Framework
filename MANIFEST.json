@@ -1,0 +1,1160 @@
+{
+ "created": "2026-11-03T11:23:45.908761+00:00",
+ "git_commit": null,
+ "git_dirty": false,
+ "settings": {
+  "budget": "fast",
+  "data_root": "/content/data",
+  "out_root": "/content/drive/MyDrive/sgcl_results_v3/results",
+  "epochs": 20,
+  "ft_epochs": 3,
+  "batch": 128,
+  "lr": 0.1,
+  "ft_lr": 0.01,
+  "momentum": 0.9,
+  "wd": 0.0005,
+  "n_trials": 500,
+  "n_sens_trials": 40,
+  "eval_subset": 1000,
+  "train_subset": 0,
+  "lambdas": [
+   1e-06,
+   1e-05,
+   0.0001
+  ],
+  "lam_op": 1e-07,
+  "lam_fat_max": 2e-07,
+  "T_pp": 2.5,
+  "T_low_pp": 1.5,
+  "prune_ratios": [
+   0.45,
+   0.25,
+   0.0
+  ],
+  "prune_steps": 3,
+  "clip_percentile": 99.99,
+  "clip_factor": 1.1,
+  "logit_clip": 20.0,
+  "beta_res": 0.0001,
+  "calib_images": 5000,
+  "mp_calib_images": 512,
+  "train_seed": 0,
+  "workers": 2,
+  "fat_weights": true,
+  "lam_sens": 1e-05,
+  "critical_rule": "median",
+  "sweep": [
+   1e-08,
+   3e-08,
+   1e-07,
+   3e-07,
+   1e-06,
+   3e-06,
+   1e-05,
+   3e-05,
+   0.0001
+  ]
+ },
+ "report_command": "python make_report.py --results /content/drive/MyDrive/sgcl_results_v3/results --out report_lam1e-07 --lam-op 1e-07",
+ "tables": {
+  "Table 3 / Fig. 2": {
+   "pairs": "all four pairs",
+   "n_files": 40,
+   "files": [
+    "efficientnet_b0_cifar10/baseline_lam1e-04.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-05.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-06.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-07.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-08.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-05.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-06.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-07.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-08.json",
+    "efficientnet_b0_cifar10/train_baseline.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-04.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-05.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-06.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-07.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-08.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-05.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-06.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-07.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-08.json",
+    "efficientnet_b0_gtsrb/train_baseline.json",
+    "resnet18_cifar10/baseline_lam1e-04.json",
+    "resnet18_cifar10/baseline_lam1e-05.json",
+    "resnet18_cifar10/baseline_lam1e-06.json",
+    "resnet18_cifar10/baseline_lam1e-07.json",
+    "resnet18_cifar10/baseline_lam1e-08.json",
+    "resnet18_cifar10/baseline_lam3e-05.json",
+    "resnet18_cifar10/baseline_lam3e-06.json",
+    "resnet18_cifar10/baseline_lam3e-07.json",
+    "resnet18_cifar10/baseline_lam3e-08.json",
+    "resnet18_cifar10/train_baseline.json",
+    "resnet18_gtsrb/baseline_lam1e-04.json",
+    "resnet18_gtsrb/baseline_lam1e-05.json",
+    "resnet18_gtsrb/baseline_lam1e-06.json",
+    "resnet18_gtsrb/baseline_lam1e-07.json",
+    "resnet18_gtsrb/baseline_lam1e-08.json",
+    "resnet18_gtsrb/baseline_lam3e-05.json",
+    "resnet18_gtsrb/baseline_lam3e-06.json",
+    "resnet18_gtsrb/baseline_lam3e-07.json",
+    "resnet18_gtsrb/baseline_lam3e-08.json",
+    "resnet18_gtsrb/train_baseline.json"
+   ]
+  },
+  "Table 4 / Fig. 4": {
+   "pairs": "resnet18_cifar10 (+ extra archs)",
+   "n_files": 44,
+   "files": [
+    "efficientnet_b0_cifar10/baseline_lam1e-04.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-05.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-06.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-07.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-08.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-05.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-06.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-07.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-08.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-04.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-05.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-06.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-07.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-08.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-05.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-06.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-07.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-08.json",
+    "resnet18_cifar10/baseline_lam1e-04.json",
+    "resnet18_cifar10/baseline_lam1e-05.json",
+    "resnet18_cifar10/baseline_lam1e-06.json",
+    "resnet18_cifar10/baseline_lam1e-07.json",
+    "resnet18_cifar10/baseline_lam1e-08.json",
+    "resnet18_cifar10/baseline_lam3e-05.json",
+    "resnet18_cifar10/baseline_lam3e-06.json",
+    "resnet18_cifar10/baseline_lam3e-07.json",
+    "resnet18_cifar10/baseline_lam3e-08.json",
+    "resnet18_cifar10/op1e-07/arch_all.json",
+    "resnet18_cifar10/op1e-07/arch_clip_only.json",
+    "resnet18_cifar10/op1e-07/arch_dup_only.json",
+    "resnet18_cifar10/op1e-07/arch_reg_only.json",
+    "resnet18_gtsrb/baseline_lam1e-04.json",
+    "resnet18_gtsrb/baseline_lam1e-05.json",
+    "resnet18_gtsrb/baseline_lam1e-06.json",
+    "resnet18_gtsrb/baseline_lam1e-07.json",
+    "resnet18_gtsrb/baseline_lam1e-08.json",
+    "resnet18_gtsrb/baseline_lam3e-05.json",
+    "resnet18_gtsrb/baseline_lam3e-06.json",
+    "resnet18_gtsrb/baseline_lam3e-07.json",
+    "resnet18_gtsrb/baseline_lam3e-08.json",
+    "resnet18_gtsrb/op1e-07/arch_all.json",
+    "resnet18_gtsrb/op1e-07/arch_clip_only.json",
+    "resnet18_gtsrb/op1e-07/arch_dup_only.json",
+    "resnet18_gtsrb/op1e-07/arch_reg_only.json"
+   ]
+  },
+  "Table 5 / Fig. 5": {
+   "pairs": "CIFAR-10 pairs",
+   "n_files": 70,
+   "files": [
+    "efficientnet_b0_cifar10/baseline_lam1e-04.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-05.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-06.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-07.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-08.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-05.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-06.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-07.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-08.json",
+    "efficientnet_b0_cifar10/op1e-07/fat_lam1e-04.json",
+    "efficientnet_b0_cifar10/op1e-07/fat_lam1e-05.json",
+    "efficientnet_b0_cifar10/op1e-07/fat_lam1e-06.json",
+    "efficientnet_b0_cifar10/op1e-07/fat_lam1e-07.json",
+    "efficientnet_b0_cifar10/op1e-07/fat_lam1e-08.json",
+    "efficientnet_b0_cifar10/op1e-07/fat_lam3e-05.json",
+    "efficientnet_b0_cifar10/op1e-07/fat_lam3e-06.json",
+    "efficientnet_b0_cifar10/op1e-07/fat_lam3e-07.json",
+    "efficientnet_b0_cifar10/op1e-07/fat_lam3e-08.json",
+    "efficientnet_b0_cifar10/op1e-07/train_fat.json",
+    "efficientnet_b0_cifar10/train_baseline.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-04.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-05.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-06.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-07.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-08.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-05.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-06.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-07.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-08.json",
+    "efficientnet_b0_gtsrb/train_baseline.json",
+    "resnet18_cifar10/baseline_lam1e-04.json",
+    "resnet18_cifar10/baseline_lam1e-05.json",
+    "resnet18_cifar10/baseline_lam1e-06.json",
+    "resnet18_cifar10/baseline_lam1e-07.json",
+    "resnet18_cifar10/baseline_lam1e-08.json",
+    "resnet18_cifar10/baseline_lam3e-05.json",
+    "resnet18_cifar10/baseline_lam3e-06.json",
+    "resnet18_cifar10/baseline_lam3e-07.json",
+    "resnet18_cifar10/baseline_lam3e-08.json",
+    "resnet18_cifar10/op1e-07/fat_lam1e-04.json",
+    "resnet18_cifar10/op1e-07/fat_lam1e-05.json",
+    "resnet18_cifar10/op1e-07/fat_lam1e-06.json",
+    "resnet18_cifar10/op1e-07/fat_lam1e-07.json",
+    "resnet18_cifar10/op1e-07/fat_lam1e-08.json",
+    "resnet18_cifar10/op1e-07/fat_lam3e-05.json",
+    "resnet18_cifar10/op1e-07/fat_lam3e-06.json",
+    "resnet18_cifar10/op1e-07/fat_lam3e-07.json",
+    "resnet18_cifar10/op1e-07/fat_lam3e-08.json",
+    "resnet18_cifar10/op1e-07/train_fat.json",
+    "resnet18_cifar10/train_baseline.json",
+    "resnet18_gtsrb/baseline_lam1e-04.json",
+    "resnet18_gtsrb/baseline_lam1e-05.json",
+    "resnet18_gtsrb/baseline_lam1e-06.json",
+    "resnet18_gtsrb/baseline_lam1e-07.json",
+    "resnet18_gtsrb/baseline_lam1e-08.json",
+    "resnet18_gtsrb/baseline_lam3e-05.json",
+    "resnet18_gtsrb/baseline_lam3e-06.json",
+    "resnet18_gtsrb/baseline_lam3e-07.json",
+    "resnet18_gtsrb/baseline_lam3e-08.json",
+    "resnet18_gtsrb/op1e-07/fat_lam1e-04.json",
+    "resnet18_gtsrb/op1e-07/fat_lam1e-05.json",
+    "resnet18_gtsrb/op1e-07/fat_lam1e-06.json",
+    "resnet18_gtsrb/op1e-07/fat_lam1e-07.json",
+    "resnet18_gtsrb/op1e-07/fat_lam1e-08.json",
+    "resnet18_gtsrb/op1e-07/fat_lam3e-05.json",
+    "resnet18_gtsrb/op1e-07/fat_lam3e-06.json",
+    "resnet18_gtsrb/op1e-07/fat_lam3e-07.json",
+    "resnet18_gtsrb/op1e-07/fat_lam3e-08.json",
+    "resnet18_gtsrb/op1e-07/train_fat.json",
+    "resnet18_gtsrb/train_baseline.json"
+   ]
+  },
+  "Table 6 / Fig. 6": {
+   "pairs": "resnet18_cifar10",
+   "n_files": 30,
+   "files": [
+    "resnet18_cifar10/op1e-07/mp_MP-1.json",
+    "resnet18_cifar10/op1e-07/mp_MP-2.json",
+    "resnet18_cifar10/op1e-07/mp_MP-3.json",
+    "resnet18_cifar10/op1e-07/mp_MP-4.json",
+    "resnet18_cifar10/op1e-07/mp_MP-5.json",
+    "resnet18_cifar10/op1e-07/prune_s0.33.json",
+    "resnet18_cifar10/op1e-07/prune_s0.33_MP3.json",
+    "resnet18_cifar10/op1e-07/prune_s0.67.json",
+    "resnet18_cifar10/op1e-07/prune_s0.67_MP3.json",
+    "resnet18_cifar10/op1e-07/prune_s1.00.json",
+    "resnet18_cifar10/op1e-07/prune_s1.00_MP3.json",
+    "resnet18_cifar10/op1e-07/prune_s1.33.json",
+    "resnet18_cifar10/op1e-07/prune_s1.33_MP3.json",
+    "resnet18_cifar10/op1e-07/prune_s1.67.json",
+    "resnet18_cifar10/op1e-07/prune_s1.67_MP3.json",
+    "resnet18_gtsrb/op1e-07/mp_MP-1.json",
+    "resnet18_gtsrb/op1e-07/mp_MP-2.json",
+    "resnet18_gtsrb/op1e-07/mp_MP-3.json",
+    "resnet18_gtsrb/op1e-07/mp_MP-4.json",
+    "resnet18_gtsrb/op1e-07/mp_MP-5.json",
+    "resnet18_gtsrb/op1e-07/prune_s0.33.json",
+    "resnet18_gtsrb/op1e-07/prune_s0.33_MP3.json",
+    "resnet18_gtsrb/op1e-07/prune_s0.67.json",
+    "resnet18_gtsrb/op1e-07/prune_s0.67_MP3.json",
+    "resnet18_gtsrb/op1e-07/prune_s1.00.json",
+    "resnet18_gtsrb/op1e-07/prune_s1.00_MP3.json",
+    "resnet18_gtsrb/op1e-07/prune_s1.33.json",
+    "resnet18_gtsrb/op1e-07/prune_s1.33_MP3.json",
+    "resnet18_gtsrb/op1e-07/prune_s1.67.json",
+    "resnet18_gtsrb/op1e-07/prune_s1.67_MP3.json"
+   ]
+  },
+  "Table 7 / Figs. 7-8": {
+   "pairs": "resnet18_cifar10",
+   "n_files": 8,
+   "files": [
+    "resnet18_cifar10/op1e-07/ablation_tests.json",
+    "resnet18_cifar10/op1e-07/sensitivity.json",
+    "resnet18_cifar10/op1e-07/unified.json",
+    "resnet18_cifar10/op1e-07/unified_exponent.json",
+    "resnet18_cifar10/op1e-07/unified_mantissa.json",
+    "resnet18_gtsrb/op1e-07/ablation_tests.json",
+    "resnet18_gtsrb/op1e-07/sensitivity.json",
+    "resnet18_gtsrb/op1e-07/unified.json"
+   ]
+  },
+  "Table 8 / Fig. 8": {
+   "pairs": "resnet18_gtsrb",
+   "n_files": 40,
+   "files": [
+    "efficientnet_b0_cifar10/baseline_lam1e-04.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-05.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-06.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-07.json",
+    "efficientnet_b0_cifar10/baseline_lam1e-08.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-05.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-06.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-07.json",
+    "efficientnet_b0_cifar10/baseline_lam3e-08.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-04.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-05.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-06.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-07.json",
+    "efficientnet_b0_gtsrb/baseline_lam1e-08.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-05.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-06.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-07.json",
+    "efficientnet_b0_gtsrb/baseline_lam3e-08.json",
+    "resnet18_cifar10/baseline_lam1e-04.json",
+    "resnet18_cifar10/baseline_lam1e-05.json",
+    "resnet18_cifar10/baseline_lam1e-06.json",
+    "resnet18_cifar10/baseline_lam1e-07.json",
+    "resnet18_cifar10/baseline_lam1e-08.json",
+    "resnet18_cifar10/baseline_lam3e-05.json",
+    "resnet18_cifar10/baseline_lam3e-06.json",
+    "resnet18_cifar10/baseline_lam3e-07.json",
+    "resnet18_cifar10/baseline_lam3e-08.json",
+    "resnet18_cifar10/op1e-07/unified.json",
+    "resnet18_cifar10/op1e-07/unified_exponent.json",
+    "resnet18_cifar10/op1e-07/unified_mantissa.json",
+    "resnet18_gtsrb/baseline_lam1e-04.json",
+    "resnet18_gtsrb/baseline_lam1e-05.json",
+    "resnet18_gtsrb/baseline_lam1e-06.json",
+    "resnet18_gtsrb/baseline_lam1e-07.json",
+    "resnet18_gtsrb/baseline_lam1e-08.json",
+    "resnet18_gtsrb/baseline_lam3e-05.json",
+    "resnet18_gtsrb/baseline_lam3e-06.json",
+    "resnet18_gtsrb/baseline_lam3e-07.json",
+    "resnet18_gtsrb/baseline_lam3e-08.json",
+    "resnet18_gtsrb/op1e-07/unified.json"
+   ]
+  },
+  "Table 10": {
+   "pairs": "resnet18_cifar10",
+   "n_files": 7,
+   "files": [
+    "resnet18_cifar10/op1e-07/cmp_fat_rabbit.json",
+    "resnet18_cifar10/op1e-07/cmp_range_restriction.json",
+    "resnet18_cifar10/op1e-07/cmp_rap.json",
+    "resnet18_cifar10/op1e-07/cmp_rl_bit_protection.json",
+    "resnet18_cifar10/op1e-07/comparator_tests.json",
+    "resnet18_cifar10/op1e-07/rl_policy.json",
+    "resnet18_cifar10/op1e-07/train_fat_rabbit.json"
+   ]
+  },
+  "Table 11": {
+   "pairs": "resnet18_cifar10",
+   "n_files": 4,
+   "files": [
+    "resnet18_cifar10/op1e-07/baseline_exponent.json",
+    "resnet18_cifar10/op1e-07/baseline_mantissa.json",
+    "resnet18_cifar10/op1e-07/unified_exponent.json",
+    "resnet18_cifar10/op1e-07/unified_mantissa.json"
+   ]
+  },
+  "Fig. 3": {
+   "pairs": "resnet18 pairs",
+   "n_files": 2,
+   "files": [
+    "resnet18_cifar10/op1e-07/sensitivity.json",
+    "resnet18_gtsrb/op1e-07/sensitivity.json"
+   ]
+  }
+ },
+ "files": {
+  "efficientnet_b0_cifar10/baseline_lam1e-04.json": {
+   "sha256": "0ee5a8ffc3c33d928ee078c3afd8e0c763587686877f5299437304e489a05e1e",
+   "bytes": 2021,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/baseline_lam1e-05.json": {
+   "sha256": "bb1d69aa46c403860501941746453850f70c73d29b15b85207b66c2d86c3b094",
+   "bytes": 2788,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/baseline_lam1e-06.json": {
+   "sha256": "a6105037f5aa2a1e2b83afc39787953434eaa058436f2b19ff15a3d1dbece1dd",
+   "bytes": 16509,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/baseline_lam1e-07.json": {
+   "sha256": "d130748fae6aa0c611bc2404ac6961b6769e04a4b1eb111d7b9d3bcc53b9f00c",
+   "bytes": 11987,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/baseline_lam1e-08.json": {
+   "sha256": "2873fe46376146c8ea9f4fd3447e1adda5b3acd951ecc6817dcc46edc19f1ca0",
+   "bytes": 8825,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/baseline_lam3e-05.json": {
+   "sha256": "28a1741eff7358919585dcb19b2be4ba73a684896bed403445f6c3b5d1064e49",
+   "bytes": 2292,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/baseline_lam3e-06.json": {
+   "sha256": "62a56f1ba213109831f92e4492433d481b65649201d20561535dbde4f7940056",
+   "bytes": 3338,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/baseline_lam3e-07.json": {
+   "sha256": "11e9fff8e5f53aef47ff3542a8befcd7d84293b6ae40ad28140ae52921e159bc",
+   "bytes": 3409,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/baseline_lam3e-08.json": {
+   "sha256": "a72b51d75f0b0233c97248f2bcd54b2863e5b66d00130aa618e10c525da45adb",
+   "bytes": 2291,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/fat_lam1e-04.json": {
+   "sha256": "757e7d3676cbc213c1d861bf367dd838fe1de6eee23bd07484d89976ccf0b670",
+   "bytes": 2010,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/fat_lam1e-05.json": {
+   "sha256": "7021fe7ff871a94b11789067946a2cc1d3c776f6f9a9fa234e12c07d35c31bfc",
+   "bytes": 2810,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/fat_lam1e-06.json": {
+   "sha256": "d72a02bc5b7b46e7e1f8b792e8a74dbcea1b7ea82642908886ab3d3748ac4d00",
+   "bytes": 16357,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/fat_lam1e-07.json": {
+   "sha256": "d4a25d6f8e97e46ce228b10b4da7a49bce8a06df84314b38a3ae36a255296d44",
+   "bytes": 12965,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/fat_lam1e-08.json": {
+   "sha256": "b9f2c2166dca6fac0ab8eb2b5557bae8e30279057392f4e7378661e53d734114",
+   "bytes": 8983,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/fat_lam3e-05.json": {
+   "sha256": "53f415487c0f771b456fb9ebe42673ec919499d83b565d53da745c50bdde48ea",
+   "bytes": 2302,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/fat_lam3e-06.json": {
+   "sha256": "948ba8b3f01bdb4b62bf283ded8e24f9a723c7090faf69983c710aa748c42560",
+   "bytes": 3309,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/fat_lam3e-07.json": {
+   "sha256": "a137988d91f865af87533d79921d36138d426a15208a4193db325c2691dda6b4",
+   "bytes": 3356,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/fat_lam3e-08.json": {
+   "sha256": "715cc971b53a29b37b21a8edeaf2906487a7c27af885eb4e37f9f904635e9a77",
+   "bytes": 2295,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/op1e-07/train_fat.json": {
+   "sha256": "b3621e8ab095ec8020d55f310c2ee12222673a7b5f5567c4c0269418928480d6",
+   "bytes": 4759,
+   "n_trials": null,
+   "diverged": null
+  },
+  "efficientnet_b0_cifar10/train_baseline.json": {
+   "sha256": "0b54952f3c38acfb768d1c12f87e434c60ecc58cff9f1253e3a86fd8a9eb0f6d",
+   "bytes": 4364,
+   "n_trials": null,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/baseline_lam1e-04.json": {
+   "sha256": "376f229c0fa13ccc55e44b3ac46fe29f72ec58dbf2fb0067507c95166bee682d",
+   "bytes": 4925,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/baseline_lam1e-05.json": {
+   "sha256": "8d397693d337695329d05da71fe57bc811c1f8bccbba318459b06a97060789c1",
+   "bytes": 4920,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/baseline_lam1e-06.json": {
+   "sha256": "c0f97822d61ec4093e476779b5648a9aaa3f7645def361fc5a712dfb1529132b",
+   "bytes": 23258,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/baseline_lam1e-07.json": {
+   "sha256": "611ea80d443f421a67ceadcb028d8876bd06c4e74149135e04180aeb83f43b6c",
+   "bytes": 19325,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/baseline_lam1e-08.json": {
+   "sha256": "96cd686bc71df1eec30461ccfd8d212c835d44d21acf1f3821915c231da24b4b",
+   "bytes": 15555,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/baseline_lam3e-05.json": {
+   "sha256": "313fe90feb8ec2ccc3efb7ffef4fb7355c9706028d290685f0caef832d588b9d",
+   "bytes": 4927,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/baseline_lam3e-06.json": {
+   "sha256": "c737d737061dedd0d1eaa9d7ba6aec01c2deaaa9ee49ab5d878922a37022e609",
+   "bytes": 4967,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/baseline_lam3e-07.json": {
+   "sha256": "90b44262b32a06b36606a9649cec49818113e03d792774d137b169c71bc78c24",
+   "bytes": 4885,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/baseline_lam3e-08.json": {
+   "sha256": "7906743a5dea63308fc5c649768a992f8757f1cbebc2085a5ec24f838dbf641e",
+   "bytes": 3688,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "efficientnet_b0_gtsrb/train_baseline.json": {
+   "sha256": "af172a0b3797cd8bf187ae27860f62f52738fc4ab21d3e48756b98910960b932",
+   "bytes": 4651,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_cifar10/baseline_lam1e-04.json": {
+   "sha256": "567b2aadd540137cc4aaa015c4d959e02dd1653f96360306587e592b6249ea32",
+   "bytes": 2909,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/baseline_lam1e-05.json": {
+   "sha256": "dbb887974941b03c3f2e27797d369275ed7c8cdd2b82155c7d9edcf9d8d42a8f",
+   "bytes": 2880,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/baseline_lam1e-06.json": {
+   "sha256": "3bd44c76cf03c50406544f8fdb13d135aeb5216a73e2a1c31dfe79f5ea2337cc",
+   "bytes": 15582,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/baseline_lam1e-07.json": {
+   "sha256": "d4cde62b0910b15519d510b40828ec2c39d9420e0cac0a6e44ca3c60c51891ba",
+   "bytes": 12236,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/baseline_lam1e-08.json": {
+   "sha256": "454228ee6dc61d05903fb2405b08af5deb77cbe0076e30fad6ba48d6f7e698f5",
+   "bytes": 8778,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/baseline_lam3e-05.json": {
+   "sha256": "22128f413b0391857f85ec768fd1b7f4cbdd2612a949379ef82a38e745c1226a",
+   "bytes": 2972,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/baseline_lam3e-06.json": {
+   "sha256": "a344a8759990c2f86de765290ed54d4ca49aee2624c8118be132f5171fa3bfc7",
+   "bytes": 3006,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/baseline_lam3e-07.json": {
+   "sha256": "3a8833738d8e3eb203bf006ee2a9ec3aab3bc001b769486465735e1c6bc8f104",
+   "bytes": 3392,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/baseline_lam3e-08.json": {
+   "sha256": "83d842efefdc027116da92117cb2a12f293d98abe762b88a829adb67c5463384",
+   "bytes": 2286,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/ablation_tests.json": {
+   "sha256": "97a00feb87ea53e43dae396532190f7d68887717109061e420585f4eb131a43c",
+   "bytes": 1292,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/activation_bounds.json": {
+   "sha256": "4e343b8540d7a6be44f58450f02349b3b29d360815b91c47b00845ab4016f83b",
+   "bytes": 812,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/arch_all.json": {
+   "sha256": "40be44208a4c927bc49fea48536e44b986607f7a2c9c617260b5a2f170a22cf0",
+   "bytes": 8874,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/arch_clip_only.json": {
+   "sha256": "94b2bae2a348aa325afe278b424eb06fb9f1dbaa4e6d399bb055824e61ca014c",
+   "bytes": 2048,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/arch_dup_only.json": {
+   "sha256": "dcb6ea2346376bc358f1e8cb8a68f9ef92fe043839f1ddaff93a8ef76898206e",
+   "bytes": 2305,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/arch_reg_only.json": {
+   "sha256": "a5f26252578a2334071fd00c5c5e82bb929ac01fe3a584b062bf618527f5a4ca",
+   "bytes": 2969,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/baseline_exponent.json": {
+   "sha256": "60c59fe694cd187fa6f7f44e7f270b68d1f1980f65f6a6efcf3bd1735a69cb28",
+   "bytes": 14767,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/baseline_mantissa.json": {
+   "sha256": "ab20c947a23b6f3dc8dea9109c47a6c308885994d6c5c964ada4e10de93bdfe6",
+   "bytes": 10467,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/cmp_fat_rabbit.json": {
+   "sha256": "6755c9ee9e721e7ac32e30a17ce195b7434b4b4a5fa322b932e323ec145eaf89",
+   "bytes": 16168,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/cmp_range_restriction.json": {
+   "sha256": "07781f09406b4d051850775983cf51c56c99110c26b81dae5bebee09765fc294",
+   "bytes": 8710,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/cmp_rap.json": {
+   "sha256": "47302b65795f32bbfbda4161c533c1add0c6c683b8060860f387f2bcaddd8026",
+   "bytes": 12549,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/cmp_rl_bit_protection.json": {
+   "sha256": "bc7ebb283ca52e157233a0f9483588c269e25f2498edaf62f65aacfc669bb3d0",
+   "bytes": 11913,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/comparator_tests.json": {
+   "sha256": "57848b8ab4c7b68310af32fdb8dad4bb7a0ec3190154b01de1ef069e4b27953f",
+   "bytes": 1654,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/fat_lam1e-04.json": {
+   "sha256": "513964aa2416efb001fef395b310dde02a671d9064c28352d5aedd4044263cf1",
+   "bytes": 2149,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/fat_lam1e-05.json": {
+   "sha256": "2d9e9e86429e80398353a3008dafaf7baa379a9e73d6162d665011a1d1f50a83",
+   "bytes": 2202,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/fat_lam1e-06.json": {
+   "sha256": "117b219ddac3a19e88842e4199898565a7451ea9b127f0505dc8479e2f77566f",
+   "bytes": 14736,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/fat_lam1e-07.json": {
+   "sha256": "f9a96d1edd0c777ee5690f546a626de756692002ad9f35f77f67da8e34102bd4",
+   "bytes": 15331,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/fat_lam1e-08.json": {
+   "sha256": "249ba227b152ec520cd78e87e49e44ee9ac4477b9a83635f22d78d9a577d800c",
+   "bytes": 9893,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/fat_lam3e-05.json": {
+   "sha256": "f06d6c45fa132f916da4da37417ca8c65dd85441bc2093bf13913e9681755c94",
+   "bytes": 2150,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/fat_lam3e-06.json": {
+   "sha256": "6b9ca63564997d1364d62f60b713a9bc4be53712bef75f6f03019f907d2e9528",
+   "bytes": 2634,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/fat_lam3e-07.json": {
+   "sha256": "06ffbdced3ffb2a0d4ea0c32db60297c37b9ddfd7ea94565bd7ca3478e7a56ed",
+   "bytes": 3640,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/fat_lam3e-08.json": {
+   "sha256": "d4e818afe4f36aca13147aff4dd046116f110c53c5206633d8222f4506e058ca",
+   "bytes": 2784,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/mp_MP-1.json": {
+   "sha256": "50223d3934898c06886fc866dd044a802f0d8172bc32f84a80c4674172156895",
+   "bytes": 14344,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/mp_MP-2.json": {
+   "sha256": "9ee4cd97a60f03ac440006ea34fd089574d40e6874d685279790f03067c12be5",
+   "bytes": 16997,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/mp_MP-3.json": {
+   "sha256": "f3aac91910226e519e67c750fe6c508e05e38edc91c293209a8b99459684c24e",
+   "bytes": 12780,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/mp_MP-4.json": {
+   "sha256": "418a600533cc74f5f3a91815317f842677c9ae7e3f5acc085db53a7a24c69885",
+   "bytes": 17009,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/mp_MP-5.json": {
+   "sha256": "d4bfdf7948930f5400991800b2b35db45218b88853a4a6be1089db57d400b2d5",
+   "bytes": 16654,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s0.33.json": {
+   "sha256": "0937709f86c1516f784e25af6b0b8438006775118326ca03ca4c12ab4d182504",
+   "bytes": 3293,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s0.33_MP3.json": {
+   "sha256": "6ae45c90ceb44f7dead98ef4c33d27a1598df97c8c6cfaecf42a3eff809a6e0b",
+   "bytes": 3087,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s0.67.json": {
+   "sha256": "f4897e2e2288da59653836d096f8664a2fc1b6b644fa514cd746f3798fe69562",
+   "bytes": 3265,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s0.67_MP3.json": {
+   "sha256": "a05be268f2b1e149be04068197a84ce9611a4e64595ea4f66bd8113cbfd87512",
+   "bytes": 3009,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s1.00.json": {
+   "sha256": "d2acf00ec37afae4391bced0f87e860339e3df9ab090ad5c1c4e2bd7d651cde7",
+   "bytes": 12567,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s1.00_MP3.json": {
+   "sha256": "e23c5f8f2c57b94e42744d60eb7abaa187ce63ea68dcf036a0d24254d48248fc",
+   "bytes": 12775,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s1.33.json": {
+   "sha256": "6b76a11b6d8ff90fd6f1a8090867b357467fa6b6971f87fdc109ef15f8d75856",
+   "bytes": 3224,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s1.33_MP3.json": {
+   "sha256": "9bb7333e8ca5016f0003609779a5bcc12d16ede56300295d29fcb01dad89ba45",
+   "bytes": 2955,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s1.67.json": {
+   "sha256": "15fa82184efe5bc81f2d444d978f8530dd9055fcde6ccf10b8b567cc38faa498",
+   "bytes": 3195,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/prune_s1.67_MP3.json": {
+   "sha256": "a8b75334b0a34cccd8657870cec15e6be58f2dd54f489a6f6c3e094fac1f0c58",
+   "bytes": 2986,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/rl_policy.json": {
+   "sha256": "06b413ad12badb15c13ecc3aed84e435145a490f793e315d1f496c817bbe521e",
+   "bytes": 11998,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/sensitivity.json": {
+   "sha256": "1c96f7f1f3d8fd388790f00fa10430ed80c0c57ac45328957cffc6be75219623",
+   "bytes": 513,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/train_archreg.json": {
+   "sha256": "81d003eb0e55388cffe15d6df7d218dbd770c0e4da3a1c626f9357ab61776e3b",
+   "bytes": 4349,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/train_fat.json": {
+   "sha256": "95d99966be7fa4a84badb89e4efc1c4907e6332776480ffce6ba9e8bfa3bb263",
+   "bytes": 4751,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/train_fat_rabbit.json": {
+   "sha256": "84b2538ccfb55b0055e3fa02f6a9aeaae4fed2daa9e6ffd3d4d1f152d6cbc8c6",
+   "bytes": 4520,
+   "n_trials": null,
+   "diverged": false
+  },
+  "resnet18_cifar10/op1e-07/train_unified.json": {
+   "sha256": "e155e434d16c6c76506ac23698fd78fe041857adb103a95df0ba099c5e21e2bf",
+   "bytes": 4746,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/unified.json": {
+   "sha256": "2188840664a29b63fe4e9ff74579261ec7ae340e41ab6c854238195514bf1bab",
+   "bytes": 9584,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/unified_exponent.json": {
+   "sha256": "468bfd87400b555bd8e54cc98773735926e4a208d8fe3d743ce5cbdb7dc45ddf",
+   "bytes": 10338,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/op1e-07/unified_mantissa.json": {
+   "sha256": "42c5ab63d620d73152d49db0e7b5d351c63f8474a8ec609760c22dbe5354819a",
+   "bytes": 8705,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_cifar10/train_baseline.json": {
+   "sha256": "5efbe4dda5e378195186083b8a461f143cd7dd7c7133fdfc9f58b48d4fe0b8d4",
+   "bytes": 4371,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_gtsrb/baseline_lam1e-04.json": {
+   "sha256": "2bc453fef089b8877b46f6319970919e509d9af224334355584ef3e0a315e5ba",
+   "bytes": 5001,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/baseline_lam1e-05.json": {
+   "sha256": "e1d586aefb8f47d4b07acfbf64d46c2ac391bc0fd6777c7aaa71a96c52f0f75e",
+   "bytes": 4986,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/baseline_lam1e-06.json": {
+   "sha256": "3a877b7771774ab17a19cdf1c7cb70023a7e55e2d1510261055dfa36a65b53bb",
+   "bytes": 23287,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/baseline_lam1e-07.json": {
+   "sha256": "ead69e6a73ed3b961d71e5037dd4771cda2e94b7ffbd31cf384cb278b8aaf21c",
+   "bytes": 19295,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/baseline_lam1e-08.json": {
+   "sha256": "9469db8fe34b146ddb9c90e7e64b529e37bea060bcbc6fc3dddd36fc73129e61",
+   "bytes": 15683,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/baseline_lam3e-05.json": {
+   "sha256": "dd4ce314af548f47c2f08a7e83dc22ce7a85aa3631734a4c99131f036a27713a",
+   "bytes": 4993,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/baseline_lam3e-06.json": {
+   "sha256": "cdad32bba31efa2627f18dd881378b6d3c321a3035afa7db0d8df25dde566575",
+   "bytes": 4961,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/baseline_lam3e-07.json": {
+   "sha256": "16838d8742c10c07e38e563750c80313ff704214392b926c0f4101070032ebec",
+   "bytes": 4818,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/baseline_lam3e-08.json": {
+   "sha256": "9a0c4985fe880799ec6da9b1cafb13c493fa1172540ed377349e38025838c976",
+   "bytes": 3618,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/ablation_tests.json": {
+   "sha256": "bead46aacf1937507488a76cebdea8f6fec66ff9f28e8c64e7a3f03ff792a98b",
+   "bytes": 1332,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/activation_bounds.json": {
+   "sha256": "63fcc55e76782e3ea82b182eb26482339cb8dc26680bc8c2e427733efab96fc8",
+   "bytes": 808,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/arch_all.json": {
+   "sha256": "4a39381735f3913abad4939549644e34bf11c11c05346392f55590d49d5530c6",
+   "bytes": 15041,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/arch_clip_only.json": {
+   "sha256": "d791cf970ce3c749a6aa0c117211bc956703b9f6693f26f7883ecaa42c0fcb4f",
+   "bytes": 3397,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/arch_dup_only.json": {
+   "sha256": "f8187cfd55d800aeb6ebad406c350d349db354f8d1f699780e39cd7e6542e5f5",
+   "bytes": 3685,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/arch_reg_only.json": {
+   "sha256": "ba49d44324bdc6b6d8a487208dfe07d5f8859cfbaddb22ebfa9c104e58393b8f",
+   "bytes": 4234,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/fat_lam1e-04.json": {
+   "sha256": "b10395b5feecd4fe946e04a6e7191436fa9fc35b73f9b2941e5d70fdd5809871",
+   "bytes": 4988,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/fat_lam1e-05.json": {
+   "sha256": "fffd98ece714828885ca66005318d503049e0605b9c0cacc7292ed869c323312",
+   "bytes": 4979,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/fat_lam1e-06.json": {
+   "sha256": "b93ae2271b11ed73fdbdc24ade40bd5fded1495bde40a8bd3d96d6581a711495",
+   "bytes": 23102,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/fat_lam1e-07.json": {
+   "sha256": "0e2760a6730df183d73862d1d3addec74588235200ec34c555434c88c9d2017c",
+   "bytes": 22599,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/fat_lam1e-08.json": {
+   "sha256": "147caeaf27abb78182cbb66fd4697e09515cdeb1050ad8334c5175fc3336aac1",
+   "bytes": 17071,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/fat_lam3e-05.json": {
+   "sha256": "59bb53731d82e3c23dd67c2ab91e7ad9a26f45c1e74eb7d44472767c511f4a84",
+   "bytes": 4971,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/fat_lam3e-06.json": {
+   "sha256": "c20a024c43f9b9733c3b09ccb622bf247570839812c10cc55848071c9f9a1c0f",
+   "bytes": 4940,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/fat_lam3e-07.json": {
+   "sha256": "a090fc7794ed0808191b128690c259b7dc6f0b362697cbef65cd137bebf2be70",
+   "bytes": 4977,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/fat_lam3e-08.json": {
+   "sha256": "c35fdbac9f7dfc3702f7cfce6f9b8343a599fe28eefade85e92369f3436697ec",
+   "bytes": 4094,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/mp_MP-1.json": {
+   "sha256": "47d035afcfdc4eeefdff3211b7e17347089eabf6f14ae6efc0d889048184aa6d",
+   "bytes": 21184,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/mp_MP-2.json": {
+   "sha256": "550a5e1dd6a4b5a823640cdb8b71662b6b3159215f4e19542ae91f7909ccd14f",
+   "bytes": 23130,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/mp_MP-3.json": {
+   "sha256": "7bee81610965721bc79fe91984dcdbc17f2d635ca47c11de7bb2904045157878",
+   "bytes": 19979,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/mp_MP-4.json": {
+   "sha256": "b642dacc6d79b681ab45a5d13f56b772d9954ceb2a3dbadd4ae9af5aeaacf384",
+   "bytes": 23285,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/mp_MP-5.json": {
+   "sha256": "8d5fcb6613309cbda26f89465ad2396043f0b8587a81838f9be56768390c70d7",
+   "bytes": 23516,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s0.33.json": {
+   "sha256": "119fe5080eb2acd7c3f9deb6e946c9aad486b61bc9b4b8a5f89b9d1ee7ccbbfc",
+   "bytes": 4664,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s0.33_MP3.json": {
+   "sha256": "ba1ab0951a4296802a466015a68f662fa57f6cd3c8f50b1c26985793d9816182",
+   "bytes": 4345,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s0.67.json": {
+   "sha256": "c11bb44ddccf7d690da84ce755962b472e6d51b7c3b65b37e53eb6ef9f035149",
+   "bytes": 4642,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s0.67_MP3.json": {
+   "sha256": "73d36e80d7bd5b309cdab1db5cc1af8001547842b59ebe748bc123a971cd95de",
+   "bytes": 4328,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s1.00.json": {
+   "sha256": "ca050a3b2148236ea90c5ffa173ad82e06d68e2943234bf0fd575cc3b9349773",
+   "bytes": 19779,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s1.00_MP3.json": {
+   "sha256": "4bda03e7eeee34b62c484afa4bf5e1adfb95399a579a6d23d7b3d39e2eb3938a",
+   "bytes": 19972,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s1.33.json": {
+   "sha256": "3c60bd855756212cf8da2d5c0b393a5687c988528b58bfb4b0a69d7b6895e4e2",
+   "bytes": 4679,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s1.33_MP3.json": {
+   "sha256": "da3faea85b1ae4a4f5117624fd17772f39c2d26d39b084c033eaa7e5ae3500d7",
+   "bytes": 4313,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s1.67.json": {
+   "sha256": "af06a11ccf9dc7772b413b583736883302f4ce3d93d992e2bac577a78ae527df",
+   "bytes": 4624,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/prune_s1.67_MP3.json": {
+   "sha256": "5e6a1c52539dc86f0af50b79793749b530cea1b4ffad033a0f5eaf656bbe1300",
+   "bytes": 4286,
+   "n_trials": 100,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/sensitivity.json": {
+   "sha256": "b093dfd0510f976a70103c1c4101e17ad0e061bb845dc94c1fee233a2718ba7c",
+   "bytes": 528,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/train_archreg.json": {
+   "sha256": "ad34dba5b9b548de7005d7e0c138025bdc4237ab83470497bfe466e76faf4cbf",
+   "bytes": 4647,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/train_fat.json": {
+   "sha256": "e8c0bf759732aa8285a22e491d23f4e030d5a8f3460e56c86c12a421d2633097",
+   "bytes": 5013,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/train_unified.json": {
+   "sha256": "765fabcfe5bf53021c5cb6156d5c487316a030714a5a74cf7e8cea1d4562b3fd",
+   "bytes": 5035,
+   "n_trials": null,
+   "diverged": null
+  },
+  "resnet18_gtsrb/op1e-07/unified.json": {
+   "sha256": "3db650cc4e01af35cec344740761e89a47f87c8f4022bf0fe144a1f1f6f99f9f",
+   "bytes": 16244,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "resnet18_gtsrb/train_baseline.json": {
+   "sha256": "47a8103f2b564d8b4f32e79d8bb575c19b7876ef7a9d652d6bb31cd9e5afdf30",
+   "bytes": 4670,
+   "n_trials": null,
+   "diverged": null
+  },
+  "settings.json": {
+   "sha256": "f98470dc78868febd2febf83ac7b71d81f5cb4f19310b41950a036d7b96382f3",
+   "bytes": 825,
+   "n_trials": 500,
+   "diverged": null
+  },
+  "settings_op1e-07.json": {
+   "sha256": "f98470dc78868febd2febf83ac7b71d81f5cb4f19310b41950a036d7b96382f3",
+   "bytes": 825,
+   "n_trials": 500,
+   "diverged": null
+  }
+ }
+}

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and this deposit."
+title: "Reproducibility package: Reproducible Evaluation of Reliability Aware Design and Fault Aware Training for Resilient Deep Neural Networks"
+authors:
+  - family-names: Madappa
+    given-names: Saravana Kumar
+    orcid: "https://orcid.org/0009-0008-3982-6869"
+    affiliation: Puducherry Technological University
+  - family-names: Nagalingam
+    given-names: Sivakumar
+    affiliation: Puducherry Technological University
+version: 1.0.0
+date-released: 2026-10-08
+license: MIT
+doi: 10.5281/zenodo.XXXXXXX
