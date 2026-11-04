@@ -4,7 +4,7 @@ This repository contains experimental code and evaluation frameworks for the man
 
 ## Artifacts & Zenodo Archive
 Pre-trained checkpoints (.pt) and full raw 500-seed evaluation outputs are archived on Zenodo:
-**Zenodo DOI:** [Insert Zenodo DOI Here]
+**Zenodo DOI:** /10.5281/zenodo.23918889
 
 ## Quick Start
 ```bash
