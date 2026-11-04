@@ -1,4 +1,4 @@
-# Reproduction Guide for Reviewers
+# Reproduction Guide
 
 This archive contains all artifacts, checkpoints, configurations, and raw per-seed trial logs (500 paired seeds) for the manuscript experiments across ResNet-18 and EfficientNet-B0 on CIFAR-10 and GTSRB.
 
